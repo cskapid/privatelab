@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Contest39.cs" />
     <Compile Include="Contest49.cs" />
+    <Compile Include="Contest50.cs" />
     <Compile Include="Heap.cs" />
     <Compile Include="IvBit\Arrays.cs" />
     <Compile Include="IvBit\Backtracking.cs" />

@@ -26,6 +26,12 @@ namespace Leetcode
                 this.Heapify(i);
             }
         }
+
+        public int FindItem(Func<List<T>, int> visitor)
+        {
+            return visitor(this.data);
+        }
+
         public void Insert(T o)
         {
             data.Add(o);

@@ -9,7 +9,7 @@ namespace Leetcode
         {
             Console.WriteLine("Version: {0}", Environment.Version.ToString());
             Console.WriteLine(typeof(string).Assembly.ImageRuntimeVersion);
-            var sln = new HeapsMaps();
+            var sln = new Contest50();
             sln.ContestValidator();
         }
     }
