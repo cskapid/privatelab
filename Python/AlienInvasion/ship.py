@@ -1,8 +1,11 @@
 import pygame
+from pygame.sprite import Sprite
 
-class Ship():
+class Ship(Sprite):
     def __init__(self, settings, screen):
         """Initialize the ship and set its starting position."""
+        super().__init__()
+        
         self.screen = screen
         self.settings = settings
 
@@ -24,14 +27,14 @@ class Ship():
         
     def update(self):
         """Update the ship's position based on the movement flag."""
-        if self.moving_right:
+        if self.moving_right and (self.center + self.settings.ship_speed_factor) < self.screen_rect.right:
             self.center += self.settings.ship_speed_factor
-            if (self.center > self.screen_rect.right):
-                self.center = 0
-        if self.moving_left:
+            #if (self.center > self.screen_rect.right):
+            #    self.center = 0
+        if self.moving_left and (self.center - self.settings.ship_speed_factor) > 0:
             self.center -= self.settings.ship_speed_factor
-            if (self.center < 0):
-                self.center = self.screen_rect.right
+            #if (self.center < 0):
+            #    self.center = self.screen_rect.right
 
         #update the rec object
         self.rect.centerx = self.center
@@ -39,3 +42,7 @@ class Ship():
     def blitme(self):
         """Draw the ship at its current location."""
         self.screen.blit(self.image, self.rect)
+
+    def center_ship(self):
+        """Center the ship on the screen."""
+        self.center = self.screen_rect.centerx
