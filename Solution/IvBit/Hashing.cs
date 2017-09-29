@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Leetcode.IvBit
+namespace Solution.IvBit
 {
     public class Hashing
     {

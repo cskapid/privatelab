@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace Leetcode
+namespace Solution.Contests
 {
     public class Contest34
     {

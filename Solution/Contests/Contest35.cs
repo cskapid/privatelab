@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Leetcode
+namespace Solution.Contests
 {
     public class Contest35
     {

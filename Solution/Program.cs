@@ -1,7 +1,8 @@
-﻿using Leetcode.IvBit;
+﻿using Solution.Contests;
+using Solution.IvBit;
 using System;
 
-namespace Leetcode
+namespace Solution
 {
     class Program
     {
@@ -9,7 +10,7 @@ namespace Leetcode
         {
             Console.WriteLine("Version: {0}", Environment.Version.ToString());
             Console.WriteLine(typeof(string).Assembly.ImageRuntimeVersion);
-            var sln = new Contest50();
+            var sln = new Contest49();
             sln.ContestValidator();
         }
     }

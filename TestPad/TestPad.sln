@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPad", "TestPad.csproj",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRank", "..\HackerRank\HackerRank.csproj", "{AEB0973B-151C-45B8-BD18-8632432D8C64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leetcode", "..\Leetcode\Leetcode.csproj", "{20859C6E-9758-4AC8-A6A1-C2761493BDE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution", "..\Leetcode\Solution.csproj", "{20859C6E-9758-4AC8-A6A1-C2761493BDE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 
-namespace Leetcode
+namespace Solution.Contests
 {
     public class Contest39
     {

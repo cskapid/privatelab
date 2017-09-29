@@ -7,8 +7,8 @@
     <ProjectGuid>{20859C6E-9758-4AC8-A6A1-C2761493BDE1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Leetcode</RootNamespace>
-    <AssemblyName>Leetcode</AssemblyName>
+    <RootNamespace>Solution</RootNamespace>
+    <AssemblyName>Solution</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,9 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contest39.cs" />
-    <Compile Include="Contest49.cs" />
-    <Compile Include="Contest50.cs" />
+    <Compile Include="Contests\Contest39.cs" />
+    <Compile Include="Contests\Contest49.cs" />
+    <Compile Include="Contests\Contest50.cs" />
     <Compile Include="Heap.cs" />
     <Compile Include="IvBit\Arrays.cs" />
     <Compile Include="IvBit\Backtracking.cs" />
@@ -59,10 +59,11 @@
     <Compile Include="IvBit\Maths.cs" />
     <Compile Include="IvBit\Searches.cs" />
     <Compile Include="ListNode.cs" />
+    <Compile Include="Problems.cs" />
     <Compile Include="TreeNode.cs" />
-    <Compile Include="Contest34.cs" />
-    <Compile Include="Contest35.cs" />
-    <Compile Include="Contest36.cs" />
+    <Compile Include="Contests\Contest34.cs" />
+    <Compile Include="Contests\Contest35.cs" />
+    <Compile Include="Contests\Contest36.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Timer.cs" />

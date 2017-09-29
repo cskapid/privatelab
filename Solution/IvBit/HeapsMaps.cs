@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Leetcode.IvBit
+namespace Solution.IvBit
 {
     public class HeapsMaps
     {

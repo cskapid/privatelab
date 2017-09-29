@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Leetcode
+namespace Solution.Contests
 {
     public class Contest50
     {
@@ -65,8 +65,173 @@ namespace Leetcode
         #region JudgePoint24
         public bool JudgePoint24(int[] nums)
         {
+            Array.Sort(nums);
+            do
+            {
+                if (valid(nums))
+                {
+                    return true;
+                }
+            } while(NextPermutation(nums));
 
+            return false;
         }
+
+        private bool valid(int[] nums)
+        {
+            double a = nums[0];
+            double b = nums[1];
+            double c = nums[2];
+            double d = nums[3];
+
+            if (valid(a+b, c, d) ||
+                valid(a-b, c, d) ||
+                valid(a*b, c, d) ||
+                (b != 0 && valid(a/b, c, d)))
+            {
+                return true;
+            }
+            if (valid(a, b+c, d) ||
+                valid(a, b-c, d) ||
+                valid(a, b*c, d) ||
+                (c != 0 && valid(a, b/c, d)))
+            {
+                return true;
+            }
+            if (valid(a, b, c+d) ||
+                valid(a, b, c-d) ||
+                valid(a, b, c*d) ||
+                (d != 0 && valid(a, b, c/d)))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        private bool valid(double a, double b, double c)
+        {
+            if (valid(a+b, c) ||
+                valid(a-b, c) ||
+                valid(a*b, c) ||
+                (b != 0 && valid (a/b, c)))
+            {
+                return true;
+            }
+
+            if (valid(a, b+c) ||
+                valid(a, b-c) ||
+                valid(a, b*c) ||
+                (c != 0 && valid(a, b / c)))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        private bool valid(double a, double b)
+        {
+            if (Math.Abs(a + b - 24.0) < 0.001 ||
+                Math.Abs(a - b - 24.0) < 0.001 ||
+                Math.Abs(a * b - 24.0) < 0.001 ||
+                (b != 0 && (Math.Abs(a / b - 24.0) < 0.001)))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private bool NextPermutation<T>(T[] a) where T : IComparable
+        { 
+            if (a.Length < 2) return false;
+            var k = a.Length - 2;
+
+            while (k >= 0 && a[k].CompareTo(a[k + 1]) >= 0) k--;
+            if (k < 0) return false;
+
+            var l = a.Length - 1;
+            while (l > k && a[l].CompareTo(a[k]) <= 0) l--;
+
+            var tmp = a[k];
+            a[k] = a[l];
+            a[l] = tmp;
+
+            var i = k + 1;
+            var j = a.Length - 1;
+            while (i < j)
+            {
+                tmp = a[i];
+                a[i] = a[j];
+                a[j] = tmp;
+                i++;
+                j--;
+            }
+
+            return true;
+        }
+        /*
+        bool flag = false;
+
+        public bool JudgePoint24(int[] nums)
+        {
+            var arr = new List<double>();
+            foreach(var n in nums)
+            {
+                arr.Add((double)n);
+            }
+            helper(arr);
+            return flag;
+        }
+
+        private void helper(List<double> arr)
+        {
+            const double eps = 0.001;
+
+            if (flag)
+            {
+                return;
+            }
+
+            if (arr.Count == 1)
+            {
+                if (Math.Abs(arr[0] - 24.0) < eps)
+                {
+                    flag = true;
+                    return;
+                }
+            }
+
+            for(int i=0;i<arr.Count;i++)
+            {
+                for(int j=0;j<i;j++)
+                {
+                    var next = new List<double>();
+                    var p1 = arr[i];
+                    var p2 = arr[j];
+                    next.AddRange(new double[] { p1 + p2, p1 - p2, p2 - p1, p1 * p2 });
+                    if (Math.Abs(p2) > eps)
+                    {
+                        next.Add(p1 / p2);
+                    }
+                    if (Math.Abs(p1) > eps)
+                    {
+                        next.Add(p2 / p1);
+                    }
+                    arr.Remove(i);
+                    arr.Remove(j);
+                    foreach(var n in next)
+                    {
+                        arr.Add(n);
+                        helper(arr);
+                        arr.Remove(arr.Count - 1);
+                    }
+                    arr.Insert(j, p2);
+                    arr.Insert(i, p1);
+                }
+            }
+        }
+        */
         #endregion //JudgePoint24
 
         #region CheckValidString

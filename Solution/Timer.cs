@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace Leetcode
+namespace Solution
 {
     public class FuncResult<T>
     {

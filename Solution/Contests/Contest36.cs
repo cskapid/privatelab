@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Leetcode
+namespace Solution.Contests
 {
     public class Contest36
     {
