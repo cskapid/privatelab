@@ -19,6 +19,21 @@ namespace Solution
             #endregion //P125_IsPalindrome
         }
 
+        public int P224_Calculate(string s)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string P394_DecodeString(string s)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int[] P636_ExclusiveTime(int n, IList<string> logs)
+        {
+            throw new NotImplementedException();
+        }
+        
         public int P300_LengthOfLIS(int[] nums)
         {
             throw new NotImplementedException();

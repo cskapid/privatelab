@@ -10,7 +10,7 @@ namespace Solution
         {
             Console.WriteLine("Version: {0}", Environment.Version.ToString());
             Console.WriteLine(typeof(string).Assembly.ImageRuntimeVersion);
-            var sln = new Contest49();
+            var sln = new Contest51();
             sln.ContestValidator();
         }
     }

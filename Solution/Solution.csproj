@@ -65,6 +65,7 @@
     <Compile Include="Contests\Contest39.cs" />
     <Compile Include="Contests\Contest49.cs" />
     <Compile Include="Contests\Contest50.cs" />
+    <Compile Include="Contests\Contest51.cs" />
     <Compile Include="HackerRank.cs" />
     <Compile Include="Heap.cs" />
     <Compile Include="IvBit\Arrays.cs" />
@@ -99,9 +100,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="HackerRank\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
