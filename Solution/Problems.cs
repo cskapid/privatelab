@@ -19,6 +19,41 @@ namespace Solution
             #endregion //P125_IsPalindrome
         }
 
+        public bool P74_SearchMatrix(int[,] matrix, int target)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void P48_Rotate(int[,] matrix)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int[] P685_FindRedundantDirectedConnection(int[,] edges)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool P44_IsMatch(string s, string p)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string P345_ReverseVowels(string s)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string P6_Zigzag_Convert(string s, int numRows)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IList<int> P30_FindSubstring(string s, string[] words)
+        {
+            throw new NotImplementedException();
+        }
+
         public int P224_Calculate(string s)
         {
             throw new NotImplementedException();

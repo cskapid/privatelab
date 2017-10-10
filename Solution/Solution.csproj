@@ -66,6 +66,8 @@
     <Compile Include="Contests\Contest49.cs" />
     <Compile Include="Contests\Contest50.cs" />
     <Compile Include="Contests\Contest51.cs" />
+    <Compile Include="Contests\Contest52.cs" />
+    <Compile Include="Contests\Contest53.cs" />
     <Compile Include="HackerRank.cs" />
     <Compile Include="Heap.cs" />
     <Compile Include="IvBit\Arrays.cs" />
@@ -76,6 +78,7 @@
     <Compile Include="IvBit\Maths.cs" />
     <Compile Include="IvBit\Searches.cs" />
     <Compile Include="ListNode.cs" />
+    <Compile Include="Misc.cs" />
     <Compile Include="Problems.cs" />
     <Compile Include="TreeNode.cs" />
     <Compile Include="Contests\Contest34.cs" />
