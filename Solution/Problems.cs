@@ -19,6 +19,21 @@ namespace Solution
             #endregion //P125_IsPalindrome
         }
 
+        public int P437_PathSum(TreeNode root, int sum)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int P124_MaxPathSum(TreeNode root)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool P459_RepeatedSubstringPattern(string s)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool P74_SearchMatrix(int[,] matrix, int target)
         {
             throw new NotImplementedException();
